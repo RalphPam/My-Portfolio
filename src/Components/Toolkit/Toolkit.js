@@ -10,7 +10,7 @@ function Toolkit() {
             <button 
                 className={'toolkit-btn' + (firstLoad ? toggle? '-maximize' : '-minimize' : '')}
                 onClick={() => {setToggle(!toggle); setFirstLoad(true)}}
-            >{'{ Toolkit }'}</button>
+            ><span className='bracket'>{'{'}</span>Toolkit<span className='bracket'>{'}'}</span></button>
             <div className={'toolkit' + (firstLoad ? toggle? '-maximize' : '-minimize' : '')}>
                 <ul>
                     <li><b>Languages:</b> Javascript, HTML5, CSS3/SASS</li>

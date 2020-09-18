@@ -69,7 +69,7 @@
 }
 
 .projects-desc {
-    color: #222831;
+    color: black;
     text-align: left;
     padding: 0 50px;
     height: 70px;
@@ -84,9 +84,6 @@
     position: absolute;
     top: 500px;
     left: 50px;
-    img {
-        width: 100%;   
-    }
     a {
         cursor: pointer;
     }
@@ -103,7 +100,7 @@
 }
 
 #js-minimize {
-    animation: js-min 0.6s linear forwards;
+    animation: js-min 1s linear forwards;
 }
 
 @keyframes js-max {
@@ -125,6 +122,9 @@
         top: 130px;
         transform: scale(1,1);
     }
+    90% {
+        transform: scale(1,1)
+    }
     100% {
         opacity: 0;
         top: 0;
@@ -143,7 +143,7 @@
 }
 
 #rq-minimize {
-    animation: rq-min 0.6s linear forwards;
+    animation: rq-min 1s linear forwards;
 }
 
 @keyframes rq-max {
@@ -165,6 +165,9 @@
         top: 532px;
         transform: scale(1,1);
     }
+    90% {
+        transform: scale(1,1)
+    }
     100% {
         opacity: 0;
         top: 0;
@@ -183,7 +186,7 @@
 }
 
 #pc-minimize {
-    animation: pc-min 0.6s linear forwards;
+    animation: pc-min 1s linear forwards;
 }
 
 @keyframes pc-max {
@@ -205,6 +208,9 @@
         top: 934px;
         transform: scale(1,1);
     }
+    90% {
+        transform: scale(1,1)
+    }
     100% {
         opacity: 0;
         top: 0;
@@ -214,24 +220,37 @@
 
 .projects-desc {
     height: 382px;
+    h3 {
+        font-size: 25px;
+        color: black;
+    }
     i {
         margin-right: 20px;
         font-size: 40px;
     }
     label {
         margin-top: 20px;
+        a {
+            color: #07689f;
+        }
+        a:hover {
+            color: #0004ff;
+        }
     }
     ul {
         word-break: break-all;
     }
     li {
         display: inline-block;
-        background-color: #212121;
+        background-color: black;
         margin-right: 3px;
         margin-top: 5px;
         color: white;
         padding: 0 10px;
         border-radius: 50px;
+    }
+    p {
+        color: black;
     }
 }
 
@@ -239,10 +258,340 @@
     position: absolute;
     font-size: 40px;
     bottom: -8px;
-    color:#0e3150;
+    color:#07689f;
 }
 
 #projects {
     position: absolute;
     top: -100px;
+}
+
+@media (max-width: 800px) and (min-width: 571px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        img {
+            width: 95%;
+        }
+    }
+    .projects-desc {
+        height: 100%;
+        label {
+            margin-top: 10px;
+            text-align: right;
+        }
+    }
+
+    @keyframes projects-max {
+        0% {
+            padding-bottom: 20px;
+        }
+        100% {
+            padding-bottom: 1600px;
+        }
+    }
+    
+    @keyframes projects-min {
+        0% {
+            padding-bottom: 1600px;
+        }
+        100% {
+            padding-bottom: 20px;
+        }
+    }
+
+    @keyframes rq-max {
+        0% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+        100% {
+            opacity: 1;
+            top: 630px;
+            transform: scale(1,1);
+        }
+    }
+    
+    @keyframes rq-min {
+        0% {
+            opacity: 1;
+            top: 630px;
+            transform: scale(1,1);
+        }
+        90% {
+            transform: scale(1,1)
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+    }
+
+    @keyframes pc-max {
+        0% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+        100% {
+            opacity: 1;
+            top: 1120px;
+            transform: scale(1,1);
+        }
+    }
+    
+    @keyframes pc-min {
+        0% {
+            opacity: 1;
+            top: 1120px;
+            transform: scale(1,1);
+        }
+        90% {
+            transform: scale(1,1)
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 801px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        left: 0;
+        img {
+            width: 95%;
+        }
+    }
+    .projects-desc {
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        margin-left: 80px;
+        label {
+            margin-top: 10px;
+            text-align: right; 
+            padding-right: 120px; 
+        }
+    }
+
+    @keyframes projects-max {
+        0% {
+            padding-bottom: 20px;
+        }
+        100% {
+            padding-bottom: 1850px;
+        }
+    }
+    
+    @keyframes projects-min {
+        0% {
+            padding-bottom: 1850px;
+        }
+        100% {
+            padding-bottom: 20px;
+        }
+    }
+
+    @keyframes rq-max {
+        0% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+        100% {
+            opacity: 1;
+            top: 720px;
+            transform: scale(1,1);
+        }
+    }
+    
+    @keyframes rq-min {
+        0% {
+            opacity: 1;
+            top: 720px;
+            transform: scale(1,1);
+        }
+        90% {
+            transform: scale(1,1)
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+    }
+
+    @keyframes pc-max {
+        0% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+        100% {
+            opacity: 1;
+            top: 1300px;
+            transform: scale(1,1);
+        }
+    }
+    
+    @keyframes pc-min {
+        0% {
+            opacity: 1;
+            top: 1300px;
+            transform: scale(1,1);
+        }
+        90% {
+            transform: scale(1,1)
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .projects-btn, .projects-btn-maximize, .projects-btn-minimize {
+        font-size: 25px;
+    }
+    .dirP {
+        font-size: 25px;
+        bottom: -5px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        left: 0;
+        img {
+            width: 95%;
+        }
+    }
+    .projects-desc {
+        height: 100%;
+        padding: 0 13px;
+        h3 {
+            font-size: 20px;
+        }
+        label {
+            margin-top: 10px;
+            text-align: right;
+        }
+        i {
+            padding-right: 0;
+            padding-left: 20px;
+            width: 20px;
+        }
+    }
+    @keyframes js-max {
+        0% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+        100% {
+            opacity: 1;
+            top: 70px;
+            transform: scale(1,1);
+        }
+    }
+    
+    @keyframes js-min {
+        0% {
+            opacity: 1;
+            top: 70px;
+            transform: scale(1,1);
+        }
+        90% {
+            transform: scale(1,1)
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+    }
+    @keyframes rq-max {
+        0% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+        100% {
+            opacity: 1;
+            top: 450px;
+            transform: scale(1,1);
+        }
+    }
+    
+    @keyframes rq-min {
+        0% {
+            opacity: 1;
+            top: 450px;
+            transform: scale(1,1);
+        }
+        90% {
+            transform: scale(1,1)
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+    }
+
+    @keyframes pc-max {
+        0% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+        100% {
+            opacity: 1;
+            top: 840px;
+            transform: scale(1,1);
+        }
+    }
+    
+    @keyframes pc-min {
+        0% {
+            opacity: 1;
+            top: 840px;
+            transform: scale(1,1);
+        }
+        90% {
+            transform: scale(1,1)
+        }
+        100% {
+            opacity: 0;
+            top: 0;
+            transform: scale(0,0);
+        }
+    }
+    @keyframes projects-max {
+        0% {
+            padding-bottom: 20px;
+        }
+        100% {
+            padding-bottom: 1200px;
+        }
+    }
+    
+    @keyframes projects-min {
+        0% {
+            padding-bottom: 1200px;
+        }
+        100% {
+            padding-bottom: 20px;
+        }
+    }
 }

@@ -10,14 +10,14 @@ function Projects() {
             <button 
                 className={'projects-btn' + (firstLoad ? toggle? '-maximize' : '-minimize' : '') }
                 onClick={() => {setToggle(!toggle); setFirstLoad(true)}}
-            >{'{ Projects }'}</button>
+            ><span className='bracket'>{'{'}</span>Projects<span className='bracket'>{'}'}</span></button>
             <div className='projects'>
                 <div className='card' id={'js' + (firstLoad ? toggle? '-maximize' : '-minimize' : '')}>
                     <img src='https://i.ibb.co/xG5Yrtt/jsCalc.png' alt='javascript calculator' />
                     <div className='projects-desc'>
                         <h3>Javascript Calculator</h3>
                         <p>-calculator created with Javascipt and React without using the eval function.</p>
-                        <ul>
+                        <ul className='skills-used'>
                             <li>React</li>
                             <li>CSS3</li>
                             <li>Responsive</li>
@@ -58,7 +58,7 @@ function Projects() {
                     <img src='https://i.ibb.co/5LvXnBc/pc.png' alt='pomodoro clock' />
                     <div className='projects-desc'>
                         <h3>Pomodoro Clock</h3>
-                        <p>time management app created using React with cool animations.</p>
+                        <p>-time management app created using React with cool animations.</p>
                         <ul>
                             <li>React</li>
                             <li>Hooks</li>

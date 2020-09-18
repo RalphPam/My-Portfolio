@@ -1,5 +1,5 @@
 .cont-header {
-    padding-top: 66px;
+    padding-top: 40px;
 }
 
 .header-wrapper {
@@ -25,6 +25,7 @@
     }   
     p {
         font-size: 25px;
+        padding: 0 50px;
     }
 }
 .fe {
@@ -53,7 +54,7 @@
 
 .ten {
     font-size: 200px;
-
+    opacity: 0.9;
 }
 
 .five {
@@ -65,4 +66,46 @@
     font-family: 'Russo One', sans-serif;
     font-size: 60px;
     color: black;
+}
+
+@media (max-width: 800px) and (min-width: 571px) {
+    .fullName {
+        font-size: 40px;
+    }
+    .five {
+        font-size: 80px;
+    }
+    .ten {
+        font-size: 180px;
+    }
+    .header-wrapper {
+        p {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 570px) {
+    .fullName {
+        font-size: 32px;
+    }
+    .five {
+        font-size: 50px;
+    }
+    .ten {
+        font-size: 100px;
+    }
+    .header-wrapper {
+        padding: 0 10px 20px;
+        p {
+            font-size: 16px;
+            padding: 0;
+        }
+    }
+    .fe {
+        width: 40px;
+    }
+    .cont-header {
+        padding-top: 2px;
+    }
 }

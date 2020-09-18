@@ -1,6 +1,26 @@
 .App {
-    padding: 0 20%;
+    width: 70%;
+    margin: 0 auto;
 }
 body {
+    height: 100%;
     background-image: linear-gradient(#232931, #0e3150);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.bracket {
+    color: black;
+}
+
+@media (max-width: 1200px) and (min-width: 571px) {
+    .App {
+        width: 80%;
+    }
+}
+
+@media (max-width: 570px) {
+    .App {
+        width: 90%;
+    }
 }

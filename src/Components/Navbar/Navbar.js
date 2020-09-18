@@ -8,9 +8,9 @@ function Navbar() {
                 <div className='list'> 
                     <ul>
                         <a href='#header'><li>About</li></a>
-                        <a href='#contact'><li>Contact</li></a>
                         <a href='#skills'><li>Skills</li></a>
                         <a href='#projects'><li>Projects</li></a>
+                        <a href='#contact'><li>Contact</li></a>
                     </ul>
                 </div>
                 <div className='accounts'>

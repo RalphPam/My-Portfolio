@@ -56,3 +56,30 @@ nav {
     border-bottom: 1px solid #112d4e;
     z-index: 20;
 }
+
+@media (max-width: 800px) and (min-width: 571px) {
+    nav {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 570px) {
+    nav {
+        padding: 0 2%;
+        font-size: 16px;
+    }
+    .list {
+        li {
+            padding-right: 10px;
+        }
+    }
+    .accounts {
+        li {
+            padding-left: 10px;
+        }
+        a {
+            font-size: 20px;
+        }
+    }
+
+}

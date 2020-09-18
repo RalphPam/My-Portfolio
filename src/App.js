@@ -4,6 +4,8 @@ import Header from './Components/Header/Header'
 import Toolkit from './Components/Toolkit/Toolkit'
 import Projects from './Components/Projects/Projects'
 import Certificates from './Components/Certificates/Certificates'
+import Contact from './Components/Contact/Contact'
+import Footer from './Components/Footer/Footer'
 
 import './App.scss'
 
@@ -15,6 +17,8 @@ function App() {
       <Toolkit />
       <Projects />
       <Certificates />
+      <Contact />
+      <Footer />
     </div>
   );
 }
