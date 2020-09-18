@@ -7,9 +7,10 @@ function Navbar() {
             <nav>
                 <div className='list'> 
                     <ul>
-                        <a href='#certificates'><li>About</li></a>
-                        <a href='#skills'><li>Contact</li></a>
-                        <a href=''><li>Skills</li></a>
+                        <a href='#header'><li>About</li></a>
+                        <a href='#contact'><li>Contact</li></a>
+                        <a href='#skills'><li>Skills</li></a>
+                        <a href='#projects'><li>Projects</li></a>
                     </ul>
                 </div>
                 <div className='accounts'>

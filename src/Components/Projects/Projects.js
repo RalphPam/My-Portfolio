@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import jsCalc from './../../Photos/jsCalc.png'
-import randQ from './../../Photos/rq.png'
-import pomo from './../../Photos/pc.png'
 import './Projects.scss'
 
 function Projects() {
@@ -9,13 +6,14 @@ function Projects() {
     const [firstLoad, setFirstLoad] = useState(false)
     return (
         <div className='projects-container'>
+            <span id='projects'></span>
             <button 
                 className={'projects-btn' + (firstLoad ? toggle? '-maximize' : '-minimize' : '') }
                 onClick={() => {setToggle(!toggle); setFirstLoad(true)}}
             >{'{ Projects }'}</button>
             <div className='projects'>
                 <div className='card' id={'js' + (firstLoad ? toggle? '-maximize' : '-minimize' : '')}>
-                    <img src={jsCalc} alt='javascript calculator' />
+                    <img src='https://i.ibb.co/xG5Yrtt/jsCalc.png' alt='javascript calculator' />
                     <div className='projects-desc'>
                         <h3>Javascript Calculator</h3>
                         <p>-calculator created with Javascipt and React without using the eval function.</p>
@@ -35,7 +33,7 @@ function Projects() {
                     </div>
                 </div>
                 <div className='card' id={'rq' + (firstLoad ? toggle? '-maximize' : '-minimize' : '')}>
-                    <img src={randQ} alt='random quote generator' />
+                    <img src='https://i.ibb.co/BzdzyHY/rq.png' alt='random quote generator' />
                     <div className='projects-desc'>
                         <h3>Random Quote Generator</h3>
                         <p>-a quote generator that fetch quotes from a fake online rest api.</p>
@@ -57,7 +55,7 @@ function Projects() {
                     </div>   
                 </div>
                 <div className='card' id={'pc' + (firstLoad ? toggle? '-maximize' : '-minimize' : '')}>
-                    <img src={pomo} alt='pomodoro clock' />
+                    <img src='https://i.ibb.co/5LvXnBc/pc.png' alt='pomodoro clock' />
                     <div className='projects-desc'>
                         <h3>Pomodoro Clock</h3>
                         <p>time management app created using React with cool animations.</p>

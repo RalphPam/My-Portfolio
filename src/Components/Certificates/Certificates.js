@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import frontEnd from './../../Photos/Front End Libraries-min.png'
-import js from './../../Photos/Javascript Algorithms and Data Structures-min.png'
-import responsive from './../../Photos/Responsive Web Design-min.png'
 import './Certificate.scss'
 
 function Certificates() {
@@ -29,17 +26,17 @@ function Certificates() {
                     <img 
                         className='javascript' 
                         style={{right: `${right[0]}%`, opacity: `${opacity[0]}`, transform: `scale(${opacity[0]},${opacity[0]})`}}
-                        src={js} 
+                        src='https://i.ibb.co/NmPtB84/Javascript-Algorithms-and-Data-Structures-min.png' 
                         alt='Javascript Algorithms and Data Structures Certificate' />
                     <img 
                         className='responsive' 
                         style={{right: `${right[1]}%`, opacity: `${opacity[1]}`, transform: `scale(${opacity[1]},${opacity[1]})`}}
-                        src={responsive} 
+                        src='https://i.ibb.co/kXJJ084/Responsive-Web-Design-min.png' 
                         alt='Responsive Web Design Certificate' />
                     <img 
                         className='front-end' 
                         style={{right: `${right[2]}%`, opacity: `${opacity[2]}`, transform: `scale(${opacity[2]},${opacity[2]})`}}
-                        src={frontEnd}
+                        src='https://i.ibb.co/HgTPqCr/Front-End-Libraries-min.png'
                         alt='Front End Libraries Certificate' />
                 </div>
                 {firstLoad ? <button className='right' onClick={rightHandler}><i className="fas fa-chevron-right"></i></button> : null}

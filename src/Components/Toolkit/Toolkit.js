@@ -5,7 +5,8 @@ function Toolkit() {
     const [toggle, setToggle] = useState(false)
     const [firstLoad, setFirstLoad] = useState(false)
     return (
-        <div className='toolkit-container' id='skills'>
+        <div className='toolkit-container'>
+            <span id='skills'></span>
             <button 
                 className={'toolkit-btn' + (firstLoad ? toggle? '-maximize' : '-minimize' : '')}
                 onClick={() => {setToggle(!toggle); setFirstLoad(true)}}

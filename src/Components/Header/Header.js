@@ -1,12 +1,5 @@
 import React from 'react'
 import './Header.scss'
-import jsImg from './../../Photos/js.png'
-import cssImg from './../../Photos/css.png'
-import htmlImg from './../../Photos/html.png'
-import jestImg from './../../Photos/jest.png'
-import reactImg from './../../Photos/react.png'
-import reduxImg from './../../Photos/redux.png'
-import webpackImg from './../../Photos/webpack.png'
 
 function Header() {
     const anim1 =   {
@@ -38,7 +31,7 @@ function Header() {
         animation: `bubbles ${(Math.random() * 6) + 3}s ease-in infinite`
     }
     return ( 
-        <div className='cont-header'>
+        <div className='cont-header' id='header'>
             <div className='header-wrapper'> 
                 <h1 className='name'>
                     <span className='five'>{'{'}</span>
@@ -51,42 +44,42 @@ function Header() {
                 <img 
                     className='fe'
                     style={anim1} 
-                    src={jsImg} 
+                    src='https://i.ibb.co/PDBfrTH/js.png' 
                     alt='javascript logo' 
                 />
                 <img 
                     className='fe'
                     style={anim2} 
-                    src={cssImg} 
+                    src='https://i.ibb.co/dpJBdZd/css.png' 
                     alt='css logo' 
                 />
                 <img 
                     className='fe' 
                     style={anim3} 
-                    src={htmlImg} 
+                    src='https://i.ibb.co/PCYwDPR/html.png' 
                     alt='html logo' 
                 />
                 <img 
                     className='fe' 
                     style={anim4} 
-                    src={jestImg} 
+                    src='https://i.ibb.co/kQknY71/jest.png'
                     alt='jest logo' />
                 <img 
                     className='fe' 
                     style={anim5} 
-                    src={reactImg} 
+                    src='https://i.ibb.co/3hN8Q6R/react.png' 
                     alt='react logo' 
                 />
                 <img 
                     className='fe' 
                     style={anim6} 
-                    src={reduxImg} 
+                    src='https://i.ibb.co/9rv0Xsc/redux.png' 
                     alt='redux logo'
                 />
                 <img 
                     className='fe' 
                     style={anim7} 
-                    src={webpackImg} 
+                    src='https://i.ibb.co/Wzbqkmk/webpack.png'
                     alt='webpack logo' 
                 />
             </div>
