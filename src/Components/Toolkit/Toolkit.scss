@@ -1,0 +1,123 @@
+.toolkit-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+.toolkit-btn {
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 5px;
+    font-size: 50px; 
+    background-color: #a6e3e9;
+    outline: none;   
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.toolkit-btn-maximize {
+    width: 100%;
+    padding: 20px 0; 
+    border-radius: 5px;
+    font-size: 50px; 
+    background-color: #a6e3e9;
+    outline: none;   
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    animation: btn-maximize 0.4s linear forwards;
+    cursor: pointer;
+}
+
+.dirT {
+    position: absolute;
+    bottom: -10px;
+    font-size: 40px;
+    color:#0e3150;
+}
+
+.toolkit-btn-minimize {
+    width: 100%;
+    padding: 20px 0; 
+    border-radius: 5px; 
+    font-size: 50px; 
+    background-color: #a6e3e9;
+    outline: none;   
+    border: none;  
+    font-family: 'Poppins', sans-serif;
+    animation: btn-minimize 0.4s linear forwards;
+    cursor: pointer;
+}
+
+@keyframes btn-maximize {
+    0% {
+        padding-bottom: 20px;
+    }
+    100% {
+        padding-bottom: 220px;
+    }
+}
+
+@keyframes btn-minimize {
+    0% {
+        padding-bottom: 220px;
+    }
+    100% {
+        padding-bottom: 20px;
+    }
+}
+
+.toolkit {
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    transform: scale(0,0);
+    font-size: 20px; 
+}
+
+.toolkit-minimize {
+    position: absolute;
+    animation: toolkit-minimize 0.4s linear forwards;
+    font-size: 20px; 
+}
+
+.toolkit-maximize {
+    position: absolute;
+    animation: toolkit-maximize 0.4s linear forwards;
+    font-size: 20px; 
+}
+
+@keyframes toolkit-maximize {
+    0% {
+        opacity: 0;
+        bottom: 0;
+    }
+    100% {
+        opacity: 1;
+        bottom: 65px;
+    }
+}
+
+@keyframes toolkit-minimize {
+    0% {
+        opacity: 1;
+        bottom: 65px;
+        transform: scale(1,1)
+    }
+    90% {
+        transform: scale(1,1)
+    }
+    100% {
+        opacity: 0;
+        bottom: 0;
+        transform: scale(0,0)
+    }
+}

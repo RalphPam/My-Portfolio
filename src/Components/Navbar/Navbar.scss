@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    li {
+        list-style: none;
+        padding-right: 30px;
+    }
+    ul {
+        display: flex;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: #6fe7dd;
+    }
+}
+
+.accounts {
+    li {
+        list-style: none;
+        padding-left: 30px;
+    }
+    ul {
+        display: flex;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 35px;
+    }
+    a:hover {
+        color: #6fe7dd;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    padding: 0 15%;
+}
+
+.navbar-wrapper {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #112d4e;
+    z-index: 20;
+}
