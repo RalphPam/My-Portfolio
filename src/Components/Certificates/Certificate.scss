@@ -274,3 +274,116 @@
         right: 10px;
     }
 }
+
+@media (max-width: 2500px) and (min-width: 2000px) {
+    @keyframes cert-btn-max {
+        0% {
+            padding-bottom: 20px;
+        }
+        100% {
+            padding-bottom: 630px;
+        }
+    }
+    
+    @keyframes cert-btn-min {
+        0% {
+            padding-bottom: 630px;
+        }
+        100% {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 2800px) and (min-width: 2501px) {
+    @keyframes cert-btn-max {
+        0% {
+            padding-bottom: 20px;
+        }
+        100% {
+            padding-bottom: 700px;
+        }
+    }
+    
+    @keyframes cert-btn-min {
+        0% {
+            padding-bottom: 700px;
+        }
+        100% {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 3000px) and (min-width: 2801px) {
+    @keyframes cert-btn-max {
+        0% {
+            padding-bottom: 20px;
+        }
+        100% {
+            padding-bottom: 800px;
+        }
+    }
+    
+    @keyframes cert-btn-min {
+        0% {
+            padding-bottom: 800px;
+        }
+        100% {
+            padding-bottom: 20px;
+        }
+    }
+
+    .left, .right {
+        top: 250px;
+    }
+}
+
+@media (max-width: 3300px) and (min-width: 3001px) {
+    @keyframes cert-btn-max {
+        0% {
+            padding-bottom: 20px;
+        }
+        100% {
+            padding-bottom: 850px;
+        }
+    }
+    
+    @keyframes cert-btn-min {
+        0% {
+            padding-bottom: 850px;
+        }
+        100% {
+            padding-bottom: 20px;
+        }
+    }
+
+    .left, .right {
+        top: 250px;
+    }
+}
+
+@media (max-width: 4000px) and (min-width: 3301px) {
+    @keyframes cert-btn-max {
+        0% {
+            padding-bottom: 20px;
+        }
+        100% {
+            padding-bottom: 1000px;
+        }
+    }
+    
+    @keyframes cert-btn-min {
+        0% {
+            padding-bottom: 1000px;
+        }
+        100% {
+            padding-bottom: 20px;
+        }
+    }
+
+    .left, .right {
+        top: 250px;
+    }
+}
+

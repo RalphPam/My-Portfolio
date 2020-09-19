@@ -83,3 +83,14 @@ nav {
     }
 
 }
+
+@media (min-width: 2800px) {
+    nav {
+        font-size: 40px;
+    }
+    .accounts {
+        i {
+            font-size: 40px;
+        }
+    }
+}

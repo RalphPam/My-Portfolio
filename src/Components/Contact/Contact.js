@@ -20,7 +20,7 @@ function Contact() {
                         href='https://drive.google.com/uc?export=download&id=1KaTE-oF70qTXRnhTrsAhFRSy5eNwTnp9' 
                         target='blank'
                     >
-                        <li><i className="far fa-file"></i> Resume</li>
+                        <li className='resume'><i class="fas fa-download"></i> Resume</li>
                     </a>
                 </ul>
             </div>
