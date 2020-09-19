@@ -154,6 +154,30 @@
     color: #07689f;
 }
 
+@media (max-width:1500px) and (min-width: 1101px) {
+    .cert, .cert-maximize, .cert-minimize {
+        top: 120px;
+        width: 100%;
+    }
+    @keyframes cert-btn-max {
+        0% {
+            padding-bottom: 20px;
+        }
+        100% {
+            padding-bottom: 600px;
+        }
+    }
+    
+    @keyframes cert-btn-min {
+        0% {
+            padding-bottom: 600px;
+        }
+        100% {
+            padding-bottom: 20px;
+        }
+    }
+}
+
 @media (max-width: 800px) and (min-width: 571px) {
     @keyframes cert-btn-max {
         0% {
