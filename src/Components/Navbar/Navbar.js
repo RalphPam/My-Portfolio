@@ -23,7 +23,10 @@ function Navbar() {
             </div>
             <div className='accounts'>
                <ul>
-                  <a href='https://www.linkedin.com/in/ralph-nest-pamintuan-6a24071b8/'>
+                  <a
+                     href='https://www.linkedin.com/in/ralph-nest-pamintuan-6a24071b8/'
+                     target='blank'
+                  >
                      <li>
                         <i className='fab fa-linkedin-in'></i>
                      </li>
